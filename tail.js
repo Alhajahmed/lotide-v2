@@ -15,6 +15,8 @@ const tail = function (array) {
     return array.slice(1);
   }
 };
+
+// Test assertions
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]);
 const words = ["Yo Yo", "Lighthouse", "Lasb"];

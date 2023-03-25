@@ -8,6 +8,6 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// testing our code
+// Test assertions
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);

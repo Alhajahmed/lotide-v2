@@ -27,7 +27,7 @@ const without = function (source, itemsToRemove) {
   return result;
 };
 
-// Test cases
+// Test assertions
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // should return [2, 3]
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // should return ["1", "2"]
 assertArraysEqual(without([1, 2, 3], []), [1, 2, 3]); // should return [1, 2, 3]
