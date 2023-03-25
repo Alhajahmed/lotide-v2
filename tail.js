@@ -16,7 +16,7 @@ const tail = function (array) {
   }
 };
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-console.log(assertEqual(result, ["Lighthouse", "Labs"]));
+assertEqual(result, ["Lighthouse", "Labs"]);
 const words = ["Yo Yo", "Lighthouse", "Lasb"];
 tail(words); // no need to capture the return value since we are not checking it
-console.log(assertEqual(words.length, 3)); // original array should still have 3 elements!
+assertEqual(words.length, 3); // original array should still have 3 elements!
