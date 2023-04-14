@@ -1,7 +1,7 @@
 {
-  "name": "lotide-v2",
+  "name": "@alhajahmed/lotide-v2",
   "version": "2.0.0",
-  "description": "",
+  "description": "lotide version 2",
   "main": "assertArraysEqual-v2.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Alhajahmed/lotide-v2.git"
   },
-  "author": "",
+  "author": "Ahmed Alhajahmed",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Alhajahmed/lotide-v2/issues"
