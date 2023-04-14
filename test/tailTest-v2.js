@@ -1,7 +1,7 @@
 const assertEqual = require("../assertEqual-v2");
 const tail = require("../tail-v2");
 
-// Tail test assertions
+// Test assertions
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
 
