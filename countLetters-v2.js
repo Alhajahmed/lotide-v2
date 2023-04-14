@@ -34,3 +34,5 @@ assertEqual(countLetters("lighthouse labs").l, 2);
 //   a: 1,
 //   b: 1,
 // });
+
+module.exports = countLetters;

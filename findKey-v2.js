@@ -51,3 +51,5 @@ assertEqual(result2, undefined);
 //   }
 //   return undefined;
 // };
+
+module.exports = findKey;

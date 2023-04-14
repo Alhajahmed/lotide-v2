@@ -46,3 +46,5 @@ const objects = [
 const getName = (obj) => obj.name;
 const results3 = map(objects, getName);
 assertArraysEqual(results3, ["Alice", "Bob", "Charlie"]);
+
+module.exports = map;

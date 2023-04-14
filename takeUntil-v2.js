@@ -32,3 +32,5 @@ const result = takeUntil(nummers, (x) => x === 4);
 console.log(result);
 
 assertArraysEqual(result, [1, 2, 3]);
+
+module.exports = takeUntil;

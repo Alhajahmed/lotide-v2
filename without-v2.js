@@ -42,3 +42,5 @@ assertArraysEqual(without(["hello", "world", "lighthouse"], ["lighthouse"]), [
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
 assertArraysEqual(words, ["hello", "world", "lighthouse"]); // should return ["hello", "world", "lighthouse"]
+
+module.exports = without;

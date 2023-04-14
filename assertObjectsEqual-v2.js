@@ -33,3 +33,5 @@ const eqObjects = function (object1, object2) {
 const object1 = { name: "Ahmed", age: 32 };
 const object2 = { name: "Ahmed", age: 32 };
 assertObjectsEqual(object1, object2);
+
+module.exports = eqObjects;
