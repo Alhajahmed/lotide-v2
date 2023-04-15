@@ -1,3 +1,4 @@
+// This function takes an array as a parameter and returns the first element of the array.
 const head = function (array) {
   if (array.length === 0) {
     return undefined;

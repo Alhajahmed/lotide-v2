@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const middle = require("../middle-v2");
+const middle = require("../middle");
 
 describe("#middle", () => {
   it("returns [] for [1]", () => {

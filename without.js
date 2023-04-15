@@ -1,25 +1,9 @@
-const assertArraysEqual = function (firstArray, secArray) {
-  if (eqArrays(firstArray, secArray)) {
-    console.log(`✅ Assertion Passed: [${firstArray}] === [${secArray}]`);
-  } else {
-    console.log(`❌ Assertion Failed: [${firstArray}] !== [${secArray}]`);
-  }
-};
-const eqArrays = function (firstArray, secArray) {
-  if (firstArray.length !== secArray.length) {
-    return false;
-  }
-  for (let i = 0; i < firstArray.length; i++) {
-    if (firstArray[i] !== secArray[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
+// This function takes an array and returns a new array with all elements except those in a second array.
 const without = function (source, itemsToRemove) {
   const result = [];
-  for (let element of source) {
+  for (const element of source) {
     if (!itemsToRemove.includes(element)) {
       result.push(element);
     }

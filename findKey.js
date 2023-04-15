@@ -1,13 +1,6 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-    return true;
-  } else {
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-    return false;
-  }
-};
+const assertEqual = require("./assertEqual");
 
+// This function takes an object and a callback function as parameters and returns the first key that has a value that meets the callback function's condition
 const findKey = (obj, callback) => {
   for (const key of Object.keys(obj)) {
     if (callback(obj[key])) {
@@ -28,9 +21,8 @@ const result1 = findKey(
   },
   (x) => x.stars === 1
 );
-assertEqual(result1, "Blue Hill");
 
-result2 = findKey(
+const result2 = findKey(
   {
     "Blue Hill": { stars: 1 },
     Akaleri: { stars: 3 },
@@ -41,15 +33,8 @@ result2 = findKey(
   },
   (x) => x.stars === 4
 );
-assertEqual(result2, undefined);
 
-// const findKey = (obj, callback) => {
-//   for (const key in obj) {
-//     if (callback(obj[key])) {
-//       return key;
-//     }
-//   }
-//   return undefined;
-// };
+assertEqual(result1, "Blue Hill");
+assertEqual(result2, undefined);
 
 module.exports = findKey;

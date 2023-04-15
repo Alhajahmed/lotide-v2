@@ -1,23 +1,6 @@
-const assertArraysEqual = function (firstArray, secArray) {
-  if (eqArrays(firstArray, secArray)) {
-    console.log(`✅ Assertion Passed: [${firstArray}] === [${secArray}]`);
-  } else {
-    console.log(`❌ Assertion Failed: [${firstArray}] !== [${secArray}]`);
-  }
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
-const eqArrays = function (firstArray, secArray) {
-  if (firstArray.length !== secArray.length) {
-    return false;
-  }
-  for (let i = 0; i < firstArray.length; i++) {
-    if (firstArray[i] !== secArray[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
+// A function that takes a sentence and returns an object that maps each letter in the sentence to an array of its positions (indices)
 const letterPositions = function (sentence) {
   const result = {};
   for (let i = 0; i < sentence.length; i++) {

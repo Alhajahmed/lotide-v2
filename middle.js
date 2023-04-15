@@ -1,3 +1,4 @@
+// The middle function takes an array as an argument and returns an array of the middle elements.
 const middle = function (array) {
   const middleElements = [];
   middleIndex = Math.floor(array.length / 2);

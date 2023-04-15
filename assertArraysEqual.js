@@ -1,5 +1,6 @@
-const eqArrays = require("./eqArrays-v2");
+const eqArrays = require("./eqArrays");
 
+// Defining the assertArraysEqual function that takes two arrays as input
 const assertArraysEqual = function (firstArray, secArray) {
   if (eqArrays(firstArray, secArray)) {
     console.log(`✅ Assertion Passed: [${firstArray}] === [${secArray}]`);
